@@ -1,0 +1,141 @@
+.certificates {
+  margin: 70px 0 0;
+
+  @media (max-width:1200px) {
+    margin: 40px 0 50px;
+  }
+
+  @media (max-width:767px) {
+    margin: 30px 0;
+  }
+
+  &-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width:1200px) {
+      justify-content: center;
+    }
+
+    &__title {
+      display: block;
+      font-size: 45px;
+      line-height: 110%;
+      max-width: 520px;
+      color: #000000;
+
+      span {
+        font-weight: 700;
+      }
+
+      @media (max-width:1200px) {
+        font-size: 35px;
+        text-align: center;
+      }
+
+      @media (max-width:767px) {
+        span {
+          display: block;
+        }
+      }
+    }
+
+    &__navigation {
+      display: flex;
+
+      @media (max-width:1200px) {
+        display: none;
+      }
+
+      &-prev {}
+
+      &-next {
+        margin: 0 0 0 12px;
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+
+  &-slider {
+    overflow: visible;
+    margin: 60px 0 0;
+
+    @media (max-width:1200px) {
+      margin: 40px 0 0;
+    }
+
+    @media (max-width:767px) {
+      margin: 30px 0 0;
+    }
+
+    &__item {
+      width: 258px;
+      height: 258px;
+      padding: 20px 20px 0 20px;
+      background: #F7F7F7;
+
+      background-image: url(../img/icons/quote.svg);
+      background-repeat: no-repeat;
+      background-position: right -10px bottom 10px;
+
+      display: flex;
+      flex-direction: column;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media (max-width:767px) {
+        min-height: 250px;
+        padding: 24px 16px 28px 24px;
+        background-position: right -10px bottom -12px;
+        background-size: 70px;
+      }
+
+      &-img {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          flex: 0 0 auto;
+        }
+      }
+    }
+
+    &__pagination {
+      margin: 46px 0 0;
+      display: flex;
+      justify-content: center;
+
+      @media (min-width:1201px) {
+        display: none;
+      }
+
+      @media (max-width:767px) {
+        margin: 30px 0 0;
+      }
+
+      .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background: #F7F7F7;
+        border-radius: 50%;
+        transition: all .3s ease;
+
+        &:not(:first-child) {
+          margin: 0 0 0 10px;
+        }
+
+        &.swiper-pagination-bullet-active {
+          width: 30px;
+          background: #099278;
+          border-radius: 90px;
+        }
+      }
+    }
+  }
+}

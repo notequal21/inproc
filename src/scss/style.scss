@@ -1,0 +1,118 @@
+// -------- imports --------
+@import "fonts";
+@import "components/_fonts";
+@import "components/_normalize.scss";
+@import "components/_mixins.scss";
+@import "components/_variables.scss";
+@import "components/_variables.scss";
+@import "components/_header.scss";
+@import "components/_footer.scss";
+@import "components/_ui.scss";
+@import "modules/swiper.scss";
+@import "pages/index/_main.scss";
+@import "pages/index/_employees.scss";
+@import "pages/index/_services.scss";
+@import "pages/index/_callback.scss";
+@import "pages/index/_steps.scss";
+@import "pages/index/_during.scss";
+@import "pages/index/_stats.scss";
+@import "pages/index/_recomend.scss";
+@import "pages/index/_consult.scss";
+@import "pages/index/_reviews.scss";
+@import "pages/index/_certificates.scss";
+@import "components/_experience.scss";
+@import "components/_map.scss";
+@import "pages/land/_submain.scss";
+@import "pages/land/_employee-card.scss";
+@import "pages/land/_card-description.scss";
+@import "pages/land/_advantages.scss";
+@import "pages/land/_uget.scss";
+@import "pages/land/_services-slider.scss";
+@import "pages/land/_faq.scss";
+@import "pages/land/_price.scss";
+@import "pages/estate/_card-description.scss";
+@import "pages/estate/_about-info.scss";
+@import "pages/estate/_about-stats.scss";
+@import "pages/mortgage/_attention.scss";
+@import "pages/blog/_top.scss";
+@import "pages/blog/_content.scss";
+@import "pages/blog/_pagination.scss";
+@import "pages/article/_content.scss";
+@import "pages/article/_table.scss";
+@import "components/modal/_form.scss";
+@import "components/modal/_employee.scss";
+
+@import "components/_aos.scss";
+
+
+::selection {}
+
+body {
+  overflow: auto; // <--- delete this if not necessary
+  font-family: 'Commissioner';
+
+  &.lock {
+    overflow: hidden;
+  }
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  &_blog {
+    max-width: 970px;
+
+    @media (max-width:1216px) {
+      max-width: 970px;
+    }
+  }
+
+  @media (max-width:1216px) {
+    max-width: 1160px;
+    padding: 0 36px;
+  }
+
+  @media (max-width:767px) {
+    max-width: 1160px;
+    padding: 0 20px;
+  }
+
+  &_nospace {
+    @media (max-width:767px) {
+      padding: 0;
+    }
+  }
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 1 auto;
+}
+
+.sitemap {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+
+  a {
+    color: #000;
+  }
+
+  li {
+    &:not(:first-child) {
+      margin: 20px 0 0;
+    }
+  }
+}

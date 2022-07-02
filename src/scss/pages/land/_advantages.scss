@@ -1,0 +1,242 @@
+.advantages {
+  margin: 50px 0 0;
+
+  @media (min-width:768px) {
+    display: flex;
+  }
+
+  @media (max-width:1200px) {
+    background: #F7F7F7;
+  }
+
+  @media (max-width:767px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  &__content {
+    flex: 0 0 100%;
+
+    .container {
+      height: 100%;
+    }
+  }
+
+  &__img {
+    @media (max-width:1200px) {
+      display: none;
+    }
+
+    @media (max-width:767px) {
+      display: block;
+    }
+
+    @media (max-width:767px) {
+      position: relative;
+      height: 0;
+      padding: 0 0 90.625%;
+
+      img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom;
+      }
+    }
+
+    @media (min-width:1201px) {
+      position: relative;
+      flex: 0 0 50%;
+      transform: translate(-100%, 0);
+      // height: inherit;
+      position: relative;
+      min-height: 660px;
+
+      img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom;
+      }
+    }
+  }
+
+  &-body {
+    padding: 55px 80px 55px 0;
+    background: #F7F7F7;
+    position: relative;
+    z-index: 1;
+
+    @media (max-width:1200px) {
+      padding: 30px 0 40px;
+    }
+
+    @media (max-width:767px) {
+      padding: 25px 0;
+    }
+
+    @media (min-width:1201px) {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      justify-content: center;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 130px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: translate(-100%, 0);
+        background: #F7F7F7;
+      }
+    }
+
+    &__title {
+      font-size: 45px;
+      line-height: 110%;
+
+      @media (max-width:1200px) {
+        font-size: 35px;
+        text-align: center;
+      }
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    &__desc {
+      margin: 30px 0 0;
+      font-size: 21px;
+      line-height: 140%;
+      color: #8A8A8A;
+      max-width: 390px;
+
+      @media (max-width:1200px) {
+        margin: 18px 0 0;
+        font-size: 18px;
+        text-align: center;
+        max-width: 100%;
+      }
+    }
+
+    &__content {
+      display: flex;
+      margin: 24px 0 0;
+
+      @media (max-width:1200px) {
+        margin: 30px 0 0;
+        justify-content: space-between;
+      }
+
+      @media (max-width:767px) {
+        flex-wrap: wrap;
+        margin: 24px 0 0;
+      }
+
+      &-item {
+        flex: 0 0 205px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #FFFFFF;
+        padding: 35px 15px 20px;
+
+        @media (max-width:1200px) {
+          flex: 0 0 calc(33.333% - 20px);
+        }
+
+        @media (max-width:767px) {
+          flex: 0 0 100%;
+        }
+
+        &:not(:first-child) {
+          margin: 0 0 0 30px;
+
+          @media (max-width:1200px) {
+            margin: 0;
+          }
+
+          @media (max-width:767px) {
+            margin: 10px 0 0;
+          }
+        }
+      }
+
+      &-ico {
+        img {
+          width: 45px;
+          height: 45px;
+        }
+      }
+
+      &-title {
+        margin: 20px 0 0;
+        font-size: 18px;
+        line-height: 140%;
+        text-align: center;
+
+        @media (max-width:1200px) {
+          font-size: 16px;
+        }
+      }
+    }
+
+    &__quote {
+      margin: 45px 0 0;
+      display: flex;
+      font-style: italic;
+      font-size: 18px;
+      line-height: 140%;
+      color: #000000;
+      position: relative;
+      padding: 0 0 0 40px;
+      max-width: 330px;
+
+      &::before {
+        content: '';
+        flex: 0 0 auto;
+        display: block;
+        width: 20px;
+        height: 1px;
+        background-color: #000000;
+        position: absolute;
+        top: 12px;
+        left: 0;
+      }
+
+      @media (max-width:1200px) {
+        margin: 40px 0 0;
+        max-width: 100%;
+        justify-content: center;
+        padding: 0;
+        font-size: 14px;
+
+        &::before {
+          position: relative;
+          margin: 0 20px 0 0;
+          top: 10px;
+        }
+      }
+
+      @media (max-width:767px) {
+        margin: 26px 0 0;
+      }
+    }
+  }
+}

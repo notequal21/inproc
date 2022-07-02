@@ -1,0 +1,330 @@
+.uget {
+  margin: 90px 0 100px;
+
+  @media (max-width:1200px) {
+    margin: 30px 0 35px;
+  }
+
+  @media (max-width:767px) {
+    margin: 30px 0 20px;
+  }
+
+  &-body {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width:1200px) {
+      flex-wrap: wrap;
+    }
+
+    &__col {
+      &:nth-child(1) {
+        flex: 0 1 525px;
+
+        @media (max-width:1200px) {
+          flex: 0 0 100%;
+        }
+      }
+
+      &:nth-child(2) {
+        flex: 0 1 500px;
+
+        @media (max-width:1200px) {
+          flex: 0 0 100%;
+        }
+      }
+    }
+
+    &__title {
+      font-size: 45px;
+      line-height: 110%;
+      color: #000000;
+
+      @media (max-width:1200px) {
+        text-align: center;
+        font-size: 35px;
+      }
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    &__content {
+      margin: 75px 0 0;
+      display: flex;
+      flex-direction: column;
+
+      @media (max-width:1200px) {
+        margin: 50px 0 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      @media (max-width:767px) {
+        margin: 35px 0 0;
+      }
+
+      &-item {
+        display: flex;
+
+        &:not(:first-child) {
+          margin: 55px 0 0;
+        }
+
+        @media (max-width:1200px) {
+          flex: 0 0 calc(50% - 15px);
+          margin: 40px 0 0;
+
+          &:not(:first-child) {
+            margin: 40px 0 0;
+          }
+
+          &:nth-child(even) {
+            margin: 40px 0 0 30px;
+          }
+
+          &:nth-child(1) {
+            margin: 0;
+          }
+
+          &:nth-child(2) {
+            margin: 0 0 0 30px;
+          }
+        }
+
+        @media (max-width:767px) {
+          flex: 0 0 100%;
+          margin: 20px 0 0;
+
+          &:not(:first-child) {
+            margin: 20px 0 0;
+          }
+
+          &:nth-child(even) {
+            margin: 20px 0 0;
+          }
+
+          &:nth-child(1) {
+            margin: 0;
+          }
+
+          &:nth-child(2) {
+            margin: 20px 0 0;
+          }
+        }
+      }
+
+      &-num {
+        flex: 0 0 auto;
+        display: flex;
+        width: 45px;
+        height: 45px;
+        justify-content: center;
+        align-items: center;
+        margin: 6px 0 0;
+        border: 1px solid #CECECE;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 110%;
+        color: #099278;
+
+        @media (max-width:767px) {
+          width: 35px;
+          height: 35px;
+          font-size: 16px;
+        }
+      }
+
+      &-text {
+        margin: 0 0 0 30px;
+        font-size: 19px;
+        line-height: 140%;
+        color: #000000;
+        max-width: 420px;
+
+        @media (max-width:1200px) {
+          font-size: 16px;
+          max-width: 250px;
+        }
+
+        @media (max-width:767px) {
+          margin: 0 0 0 20px;
+          font-size: 14px;
+        }
+
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+
+    &__consult {
+      border: 12px solid #E3F1EF;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 75px 55px 60px;
+
+      @media (max-width:1200px) {
+        margin: 35px 0 0;
+        padding: 26px 90px 40px;
+      }
+
+      @media (max-width:767px) {
+        margin: 25px 0 0;
+        padding: 26px 15px 20px;
+      }
+
+      &-ico {
+        img {
+          width: 80px;
+          height: 90px;
+        }
+
+        @media (max-width:1200px) {
+          img {
+            width: 65px;
+            height: 70px;
+          }
+        }
+
+        @media (max-width:767px) {
+          img {
+            width: 35px;
+            height: 35px;
+          }
+        }
+      }
+
+      &-title {
+        margin: 50px 0 0;
+        text-align: center;
+        font-size: 26px;
+        line-height: 110%;
+
+        @media (max-width:1200px) {
+          margin: 20px 0 0;
+        }
+
+        @media (max-width:767px) {
+          font-size: 22px;
+        }
+
+        span {
+          font-weight: 700;
+        }
+      }
+
+      &-desc {
+        margin: 16px 0 0;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        color: #000000;
+
+        @media (max-width:1200px) {
+          margin: 20px 0 0;
+        }
+      }
+
+      &-btn {
+        margin: 30px 0 0;
+
+        br {
+          display: none;
+        }
+
+        @media (max-width:1200px) {
+          width: 100%;
+          max-width: 370px;
+          margin: 30px auto 0;
+        }
+
+        @media (max-width:767px) {
+          text-align: center;
+
+          br {
+            display: block;
+          }
+        }
+      }
+
+      &-socials {
+        margin: 30px 0 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        @media (max-width:767px) {
+          margin: 25px 0 0;
+        }
+
+        .socials-title {
+          flex: 0 0 100%;
+          text-align: center;
+        }
+
+        .socials-body {
+          flex: 0 0 100%;
+          max-width: 252px;
+          display: flex;
+          justify-content: space-between;
+          margin: 15px auto 0;
+
+          &__item {
+            flex: 0 0 calc(50% - 4px);
+            padding: 0 5px;
+          }
+        }
+      }
+    }
+
+    &.uget-body_single {
+      justify-content: flex-start;
+
+      .uget-body {
+        &__col {
+          flex: 0 0 100%;
+          display: flex;
+          flex-direction: column;
+        }
+
+        &__content {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+
+          &-text {
+            max-width: 100%;
+          }
+
+          &-item {
+            flex: 0 0 calc(50% - 22.5px);
+            margin: 50px 0 0;
+
+            &:nth-child(even) {
+              margin: 50px 0 0 45px;
+            }
+
+            &:nth-child(1) {
+              margin: 0;
+            }
+
+            &:nth-child(2) {
+              margin: 0 0 0 45px;
+            }
+
+            @media (max-width:767px) {
+              flex: 0 0 100%;
+              margin: 0;
+
+              &:not(:first-child) {
+                margin: 20px 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

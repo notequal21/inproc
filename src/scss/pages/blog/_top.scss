@@ -1,0 +1,117 @@
+.blog-header {
+  margin: 160px 0 0;
+
+  @media (max-width:1200px) {
+    .container {
+      padding: 0;
+    }
+  }
+
+  @media (max-width:767px) {
+    margin: 150px 0 0;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__top {
+    display: flex;
+
+    @media (max-width:1200px) {
+      padding: 0 36px;
+    }
+
+    @media (max-width:767px) {
+      padding: 0 20px;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      color: #8A8A8A;
+
+      &:last-child {
+        color: #000000;
+      }
+
+      &:not(:first-child) {
+        &::before {
+          content: url(../img/icons/arrow-green.svg);
+          display: inline-block;
+          margin: 0 15px;
+        }
+      }
+    }
+  }
+
+  &__title {
+    margin: 15px auto 0;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 110%;
+    text-align: center;
+    color: #121212;
+    max-width: 720px;
+
+    @media (max-width:1200px) {
+      font-size: 40px;
+      padding: 0 36px;
+    }
+
+    @media (max-width:767px) {
+      padding: 0 20px;
+    }
+  }
+
+  &__menu {
+    width: 100%;
+    display: flex;
+    margin: 30px 0 0;
+    overflow-y: hidden;
+    overflow-x: auto;
+    position: relative;
+    justify-content: center;
+
+    @media (max-width:1200px) {
+      padding: 0 0 0 20px;
+      justify-content: flex-start;
+
+      &::after {
+        content: url(../img/icons/shadow.svg);
+        display: block;
+        width: 85px;
+        height: 85px;
+        position: fixed;
+        right: 0;
+        transform: translate(6px, -50px);
+      }
+    }
+
+    &-item {
+      padding: 7px 17px 9px;
+      font-size: 18px;
+      line-height: 22px;
+      color: #8A8A8A;
+      white-space: nowrap;
+
+      &:not(:first-child) {
+        margin: 0 0 0 10px;
+      }
+
+      @media (max-width:1200px) {
+        &:last-child {
+          margin: 0 50px 0 10px;
+        }
+      }
+
+      &.active {
+        font-weight: 600;
+        color: #FFFFFF;
+        background: #099278;
+      }
+    }
+  }
+}

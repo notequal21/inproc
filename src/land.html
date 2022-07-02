@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zxx">
+@@include('components/_head.html', {
+'title':'name',
+})
+
+<body>
+
+  <div class="wrapper">
+    <div class="content">
+      @@include('components/header.html', {
+        class: 'header_min'
+      })
+
+
+      @@include('components/modal/_form.html')
+      @@include('components/modal/_employee.html')
+
+      @@include('pages/land/_main.html')
+      @@include('pages/land/_submain.html')
+      @@include('pages/land/_employee-card.html')
+      @@include('pages/land/_card-description.html')
+      @@include('pages/land/_callback.html')
+      @@include('pages/land/_advantages.html')
+      @@include('pages/land/_uget.html')
+      @@include('pages/land/_services-slider.html')
+      @@include('pages/land/_get-consult.html')
+      @@include('pages/land/_faq.html')
+      @@include('pages/land/_cooperaion-reviews.html')
+      @@include('pages/land/_price.html')
+
+      @@include('components/_experience.html')
+      @@include('components/_map.html')
+
+    </div>
+    @@include('components/footer.html')
+  </div>
+
+  @@include('components/_js.html')
+
+</body>
+
+</html>

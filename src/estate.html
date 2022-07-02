@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zxx">
+@@include('components/_head.html', {
+'title':'name',
+})
+
+<body>
+
+  <div class="wrapper">
+    <div class="content">
+      @@include('components/header.html', {
+        class: 'header_min'
+      })
+
+      <div class="modal-form">
+        <div class="modal-form__bg"></div>
+        <div class="modal-form__content">
+          <div class="modal-form__col">
+            <div class="modal-form__title">
+              Получить <span>персональную
+                консультацию</span>
+            </div>
+            <div class="modal-form__subtitle">
+              Введите ваши данные и наш юрист свяжется с вами для решения вашей проблемы
+            </div>
+            <div class="modal-form__employee">
+              <div class="modal-form__employee-img">
+                <span>
+                  <img src="./img/employee-card/02.png" srcset="./img/employee-card/02.png 1x, ./img/employee-card/02@2x.png 2x" alt="">
+                </span>
+              </div>
+              <div class="modal-form__employee-info">
+                <div class="modal-form__employee-name">
+                  Карасева Наталья
+                </div>
+                <div class="modal-form__employee-pos">
+                  Сопровождение сделок с недвижимостью
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-form__col">
+            <form class="modal-form-item"> 
+              <label>
+                <input type="text" name="name" class="input-name" placeholder="Ваше имя">
+              </label>
+              <label>
+                <input type="tel" name="tel" class="input-tel" placeholder="+7 (___) ___ - __ - __">
+              </label>
+              <label class="modal-form__name">
+                <input type="text" name="date" class="date-mask input-date" placeholder="__ - __ - 2022">
+                <span>Дата</span>
+              </label>
+              <label class="modal-form__name">
+                <!-- <select>
+                  <option value="1">11:00</option>
+                  <option value="2">12:00</option>
+                  <option value="3">13:00</option>
+                  <option value="4">14:00</option>
+                  <option value="5">15:00</option>
+                </select> -->
+                <input type="text" name="time" class="time-mask" placeholder="12:00">
+                <span>Время</span>
+              </label>
+              <button class="btn btn_main">Отправить</button>
+              <div class="modal-form__warn">Нажимая кнопку отправить, я соглашаюсь с политикой конфидициальности</div>
+            </form>
+          </div>
+      
+          <div class="modal-form__thank">
+            <div class="modal-form__thank-ico">
+              <img src="./img/modal/thank.svg" alt="">
+            </div>
+            <div class="modal-form__thank-title">
+              Спасибо!
+              <span>Скоро с вами свяжемся</span>
+            </div>
+            <div class="modal-form__thank-desc">
+              Мы получили ваш запрос, как наши юристы его обработают мы с вами свяжемся
+            </div>
+          </div>
+      
+          <div class="modal-form__content-close">Закрыть</div>
+        </div>
+      </div>
+
+      @@include('components/modal/_employee.html')
+
+      @@include('pages/estate/_main.html')
+      @@include('pages/estate/_employee-card.html')
+      @@include('pages/estate/_card-description.html')
+      @@include('pages/estate/_get-consult.html')
+      @@include('pages/estate/_advantages.html')
+      @@include('pages/estate/_uget.html')
+      @@include('pages/estate/_about-info.html')
+      @@include('pages/estate/_get-consult2.html')
+      @@include('pages/estate/_faq.html')
+      @@include('pages/estate/_about-stats.html')
+      @@include('pages/index/_reviews.html')
+
+      @@include('pages/estate/_price.html')
+
+      @@include('components/_experience.html')
+      @@include('components/_map.html')
+
+    </div>
+    @@include('components/footer.html')
+  </div>
+
+  @@include('components/_js.html')
+
+</body>
+
+</html>

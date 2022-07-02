@@ -1,0 +1,17 @@
+.attention {
+  margin: 35px 0 0;
+
+  @media (max-width:1200px) {
+    margin: 25px 0 0;
+  }
+
+  &__info {
+    font-size: 15px;
+    line-height: 140%;
+    color: #8A8A8A;
+
+    @media (max-width:767px) {
+      text-align: center;
+    }
+  }
+}

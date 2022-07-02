@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zxx">
+@@include('components/_head.html', {
+'title':'name',
+})
+
+<body>
+
+  <div class="wrapper">
+    <div class="content">
+      @@include('components/header.html', {
+        class: ''
+      })
+
+      @@include('pages/blog/_top.html')
+      @@include('pages/blog/_content.html')
+      @@include('pages/blog/_pagination.html')
+
+    </div>
+    @@include('components/footer.html')
+  </div>
+
+  @@include('components/_js.html')
+
+</body>
+
+</html>
