@@ -7,7 +7,7 @@ import AOS from 'aos';
 export const burger = () => {
   if (document.querySelector('.header-body__burger')) {
     const openBtn = document.querySelector('.header-body__burger')
-    const closeBtn = document.querySelector('.header-menu__close')
+    // const closeBtn = document.querySelector('.header-menu__close')
     const header = document.querySelector('.header')
     const menu = document.querySelector('.header-menu')
     const body = document.querySelector('body')
@@ -87,7 +87,7 @@ export const burger = () => {
     }
 
     openBtn.addEventListener('click', toggleBurger)
-    closeBtn.addEventListener('click', toggleBurger)
+    // closeBtn.addEventListener('click', toggleBurger)
   }
 }
 
@@ -546,8 +546,80 @@ export const playViedeo = () => {
   }
 }
 
-export const lazyIframe = () => {
-  if (document.querySelector('.iframe-video-container')) {
+export const lazyIframeIndex = () => {
+  if (document.querySelector('.iframe-video-container-index')) {
+    let iframeVideo = document.createElement('iframe');
+
+    iframeVideo.src = 'https://www.youtube.com/embed/xDpj2ioYjuY'
+    iframeVideo.title = 'YouTube video player'
+    iframeVideo.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+    iframeVideo.allowFullscreen
+
+    let fired = false
+    window.addEventListener('scroll', () => {
+      if (fired === false) {
+        fired = true;
+
+        setTimeout(() => {
+
+          document.querySelector('.iframe-video-container-index').append(iframeVideo);
+
+        }, 100)
+      }
+    });
+  }
+}
+
+export const lazyIframeLand = () => {
+  if (document.querySelector('.iframe-video-container-land')) {
+    let iframeVideo = document.createElement('iframe');
+
+    iframeVideo.src = 'https://www.youtube.com/embed/xDpj2ioYjuY'
+    iframeVideo.title = 'YouTube video player'
+    iframeVideo.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+    iframeVideo.allowFullscreen
+
+    let fired = false
+    window.addEventListener('scroll', () => {
+      if (fired === false) {
+        fired = true;
+
+        setTimeout(() => {
+
+          document.querySelector('.iframe-video-container').append(iframeVideo);
+
+        }, 100)
+      }
+    });
+  }
+}
+
+export const lazyIframeEstate = () => {
+  if (document.querySelector('.iframe-video-container-estate')) {
+    let iframeVideo = document.createElement('iframe');
+
+    iframeVideo.src = 'https://www.youtube.com/embed/xDpj2ioYjuY'
+    iframeVideo.title = 'YouTube video player'
+    iframeVideo.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+    iframeVideo.allowFullscreen
+
+    let fired = false
+    window.addEventListener('scroll', () => {
+      if (fired === false) {
+        fired = true;
+
+        setTimeout(() => {
+
+          document.querySelector('.iframe-video-container').append(iframeVideo);
+
+        }, 100)
+      }
+    });
+  }
+}
+
+export const lazyIframeMort = () => {
+  if (document.querySelector('.iframe-video-container-mort')) {
     let iframeVideo = document.createElement('iframe');
 
     iframeVideo.src = 'https://www.youtube.com/embed/xDpj2ioYjuY'

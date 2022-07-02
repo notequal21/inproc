@@ -13,6 +13,11 @@ functions.masks()
 functions.validateCallback()
 functions.validateModalForm()
 functions.aosAnim()
-functions.lazyIframe()
+
+functions.lazyIframeIndex()
+functions.lazyIframeLand()
+functions.lazyIframeEstate()
+functions.lazyIframeMort()
+
 functions.lazyMap()
 functions.playViedeo()
