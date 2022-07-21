@@ -5,9 +5,24 @@ import AOS from 'aos';
 
 
 export const burger = () => {
+  const anchors = document.querySelectorAll('a[href*="#"]')
+
+  for (let anchor of anchors) {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault()
+
+      const blockID = anchor.getAttribute('href').substr(1)
+
+      document.getElementById(blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+    })
+  }
+
   if (document.querySelector('.header-body__burger')) {
     const openBtn = document.querySelector('.header-body__burger')
-    // const closeBtn = document.querySelector('.header-menu__close')
+    const closeBtn = document.querySelectorAll('.header-body__burger-close')
     const header = document.querySelector('.header')
     const menu = document.querySelector('.header-menu')
     const body = document.querySelector('body')
@@ -87,7 +102,9 @@ export const burger = () => {
     }
 
     openBtn.addEventListener('click', toggleBurger)
-    // closeBtn.addEventListener('click', toggleBurger)
+    closeBtn.forEach(item => {
+      item.addEventListener('click', toggleBurger)
+    })
   }
 }
 
